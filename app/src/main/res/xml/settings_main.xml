@@ -3,6 +3,10 @@
     android:title="@string/settings_title">
 
     <EditTextPreference
-        android:defaultValue="@string/settings_default_value"/>
+        android:defaultValue="@string/settings_book_value"
+        android:inputType="textCapSentences"
+        android:key="@string/settings_book_key"
+        android:selectAllOnFocus="true"
+        android:title="@string/settings_book_label" />
 
 </PreferenceScreen>

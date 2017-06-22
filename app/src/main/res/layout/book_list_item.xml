@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/book_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                tools:text="Title" />
+
+            <TextView
+                android:id="@+id/book_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                tools:text="Author" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/book_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textColor="@android:color/black"
+            tools:text="Bacon ipsum dolor amet boudin dolor flank ribeye, esse tenderloin tail rump prosciutto sunt nostrud. Venison sausage spare ribs, quis drumstick biltong excepteur tenderloin flank picanha laborum t-bone anim duis eu. Ribeye tri-tip andouille sint kielbasa reprehenderit, commodo cupim porchetta non aliqua frankfurter meatloaf. Kielbasa pork belly cow andouille. Landjaeger dolore esse fatback aute enim hamburger flank do dolor pork chop nostrud." />
+
+    </LinearLayout>
+
+</LinearLayout>

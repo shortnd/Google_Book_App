@@ -50,10 +50,9 @@ public class QueryUtils {
         }
 
         // Extracts relevant fields from the JSON response and create a list of {@link Books}s
-        List<Book> books = extractFeatureFromJson(jsonResponse);
+        // and then returns them to the List<Book>
+        return extractFeatureFromJson(jsonResponse);
 
-        // Return the list of {@link Book}s
-        return books;
     }
 
     /**
@@ -166,7 +165,7 @@ public class QueryUtils {
                 JSONObject properties = currentBook.getJSONObject("volumeInfo");
 
                 // Extract the value for the key called "title"
-                String title = properties.getString("titles");
+                String title = properties.getString("title");
 
                 // Extract the value for the key called "authors"
                 JSONArray authorList = properties.getJSONArray("authors");
